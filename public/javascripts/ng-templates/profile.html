@@ -1,0 +1,29 @@
+<div class="profile" ng-show="$ctrl.user.username">
+
+<div class="info">
+  <div class="details">
+    <h1>Account</h1><br>
+    <p>username:      {{ $ctrl.user.username }} </p><br>
+    <p>email:     {{ $ctrl.user.email }} </p>
+  </div>
+</div>
+
+<div class="manage alignRight">
+  <h1>Edit Favorites</h1>
+  <div ng-repeat="favorite in $ctrl.user.favorites" class="alignRight">
+    <p>{{favorite}}</p>
+    <p ng-click="$ctrl.removeFavorite(favorite)" class="remove">-</p>
+  </div>
+
+  <!-- <label>browse</label> -->
+  <select ng-model="$ctrl.add">
+    <option ng-repeat="train in $ctrl.trains" ng-model="$ctrl.train">{{train}}</option>
+  </select>
+  <!-- <p>save to favorite</p> -->
+  <!-- <img ng-click="$ctrl.addNewFavorite($ctrl.train)" src="../images/thumbup.svg"/> -->
+  <p ng-click="$ctrl.addNewFavorite($ctrl.train)" class="add">+</p>
+</div>
+
+</div>
+
+<!-- <div class="tracks"></div> -->

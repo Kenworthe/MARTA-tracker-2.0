@@ -1,0 +1,379 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 14px;
+  background-color: #2A363B;
+  width: 100%;
+  /*background-image: url("../images/train.svg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+form {
+  text-align: center;
+}
+
+button {
+    background-color: #99B898;
+    border: none;
+    color: black;
+    font-family: 'PT Sans Caption', sans-serif;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navBar {
+  /*background-color: #FECEA8;*/
+  background-color: #FF847C;
+  /*padding: 10px;*/
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.navBar h1 {
+  /*font-family: 'Raleway Dots';*/
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 50px;
+}
+#searchGlass {
+  opacity: .3;
+  align-self: center;
+}
+.logo {
+  width: 150px;
+  height: 70px;
+  /*background: white;*/
+  /*background-image: url("../images/marta-logo.jpg");*/
+  background-image: url("../images/marta-logo-dark.png");
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo h1{
+  color: white;
+  font-size: 70px;
+  align-self: center;
+  text-align: center;
+  display: none;
+  /*visibility: hidden;*/
+}
+
+.links {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;;
+  height: 70px;
+  line-height: 1;
+  width: 120px;
+}
+.links a {
+  margin: 5px;;
+  color: #FECEA8;
+  justify-content: space-between;
+
+}
+#marta {
+  color: #2A363B;
+  font-size: 45px;
+  font-family: 'PT Sans Caption', sans-serif;
+  line-height: 2;
+
+}
+
+.navBar h2 {
+  display: inline-block;
+  text-align: center;
+}
+.left{
+  text-align: left;
+}
+
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.right{
+  float: right;
+  margin-right: 20px;
+}
+
+.favorites {
+  background-color: #99B898;
+  color: #2A363B;
+  margin: 0;
+  /*padding-right: 10px;*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*flex-wrap: wrap;*/
+  /*height: 50px;*/
+}
+.favorite {
+  align-self: center;
+}
+.favorites p {
+  display: inline-block;
+  align-self: center;
+  padding: 0 5px;
+  margin-right: 5px;
+  /*border-right: 1px solid white;*/
+  background: #FECEA8;
+  border-radius: 10px;
+}
+.favorites p:last-child {
+  border-right: none;
+  flex-shrink: 1;
+}
+
+.profile {
+  color: #99B898;
+
+  width: 85%;
+  margin: 0 auto;
+  /*border: 1px solid gray;*/
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.profile h4, p {
+  display: inline-block;
+}
+.profile h4 {
+  font-size: 20px;
+  margin: 0;
+}
+.remove {
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0 7px;
+}
+.add {
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0 5px;
+}
+.manage {
+  min-width: 234px;
+  flex-wrap: nowrap;
+}
+.manage p {
+  margin: 3px 0;
+}
+.alignRight {
+  text-align: right;
+}
+
+.fill {
+  fill: white;
+}
+
+.details {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  /*border: 1px solid gray;*/
+}
+
+.info {
+  width: 214px;
+  /*min-width: 234px;*/
+  flex-wrap: nowrap;
+}
+.info p {
+  margin: 0;
+}
+
+.search {
+  width: 80%;
+  margin: 0 auto;
+  /*border-radius: 20px;*/
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search li{
+  list-style: none;
+  text-align: center;
+  font-family: 'PT Sans Caption', sans-serif;
+
+}
+.search img{
+  align-self: flex-start;
+  margin: 0  0 0 10%;
+  position: sticky;
+}
+.searchInput {
+  margin: 0 auto;
+}
+input[type=text]{
+  width: 200px;;
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+input[type=password]{
+  width: 200px;;
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  margin: 10px;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+.fixed {
+  position: static;
+  width: 100%;
+  top: 0;
+  /*margin: 0 auto;*/
+  /*top: 70px;*/
+}
+.ticker {
+  /*border: 3px solid gray;*/
+  /*border-radius: 20px;*/
+  background-color: #2A363B;
+  width: 80%;
+  min-height: 500px;
+  /*border-top: 5px solid #FF847C;*/
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: text-bottom;
+  overflow: scroll;
+  font-family: 'Raleway Dots', sans-serif;
+  font-size: 3em;
+}
+.ticker p {
+  display: block;
+  margin: 0;
+  font-size: 1.4em;
+  /*font-size: 40px;*/
+  vertical-align: top;
+}
+.ticker li{
+  list-style: none;
+}
+.showingFor {
+  /*color: white;*/
+  color: #FECEA8;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+  /*background-color: #FF847C;*/
+}
+.red {
+  color: #E84A5F;
+}
+.green {
+  color: #99B898;
+}
+.blue {
+  color: #00BBE5;
+}
+.gold {
+  color: #FECEA8;
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   width:150px;
+}
+@media only screen and (max-width: 600px) {
+    .search {
+        width: 100%;
+        /*height: 30px;*/
+        padding: 0;
+    }
+    .search input {
+      /*height: 30px;*/
+
+    }
+    .navBar h1 {
+      font-size: 50px;
+    }
+    .ticker {
+      width: 98%;
+      height: 220px;
+    }
+    #marta {
+      display: none;
+    }
+    .logo {
+      width: 80px;
+      height: 45px;
+      /*transform: scale(.3);*/
+      background-image: url("../images/marta-logo-dark-small.png");
+      background-position: center;
+      /*background-image: none;*/
+      background-repeat: no-repeat;
+      /*background: #2A363B;*/
+    }
+    .logo h1 {
+      display: block;
+      font-size: 55px;
+    }
+    .navBar {
+      height: 40px;
+      /*display: default;*/
+      /*flex-direction: column;*/
+      align-items: baseline;
+    }
+    .links  {
+      flex-direction: row;
+      /*align-items: flex-end;*/
+      position: absolute;
+      right: 20px;
+      top: -30px;
+      text-align: right;
+    }
+    .links a {
+     color: #2A363B;
+    }
+}
+
+.tracks {
+  position: fixed;
+  margin: 0 auto;
+  bottom: 20px;
+  width: 100%;
+  height: 20px;
+  background-image: url("../images/marta-logo-light.png");
+
+}

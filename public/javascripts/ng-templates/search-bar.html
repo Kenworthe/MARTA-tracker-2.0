@@ -1,0 +1,12 @@
+<div class="search">
+  <img id="searchGlass" src="./images/search.svg"/>
+<form name= "myForm" class="searchInput"   autocomplete="off">
+  <input auto-complete name="myField" type="text" placeholder="search trains" autofocus="autofocus" ng-model="$ctrl.bothFilter" required>
+
+  <span ng-hide="myForm.myField.$error.required">
+    <ul ng-repeat="item in $ctrl.trains | filter:$ctrl.bothFilter" ng-show="{{$ctrl.userSelection !== $ctrl.bothFilter}}" ng-hide="{{$ctrl.userSelection === $ctrl.bothFilter}}">
+      <li ng-click="$ctrl.setSelection(item); $ctrl.setBothFilter(item)"  ng-hide="$ctrl.userSelection"><a ui-sref-opts="{reload:true}" ui-sref="results">{{ item }}</a></li>
+    <ul>
+  </span>
+</form>
+</div>

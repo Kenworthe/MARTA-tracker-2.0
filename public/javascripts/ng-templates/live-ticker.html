@@ -1,0 +1,20 @@
+<div class="showingFor" ng-show="$ctrl.selectedStation">
+	<!-- <p>Showing schedule for: {{$ctrl.selectedStation}}</p> -->
+	<button ng-click="$ctrl.addNewFavorite($ctrl.selectedStation)">Add {{$ctrl.selectedStation}} to Favorites</button>
+	<!-- <button ng-hide="$ctrl.user">Sign up to add to Favorites</button> -->
+	<!-- <p ng-hide="$ctrl.user">Sign up to add to Favorites</p> -->
+</div>
+
+<div class="ticker" ng-show="$ctrl.selectedStation">
+		<!-- <ul> -->
+			<p ng-repeat="train in $ctrl.station" ng-class="{'red': train.LINE == 'RED', 'green': train.LINE == 'GREEN', 'gold': train.LINE == 'GOLD', 'blue': train.LINE == 'BLUE'}">
+				{{train.LINE}}  {{train.DIRECTION}}
+				to {{train.DESTINATION}}: {{train.WAITING_TIME}}
+				{{train.WAITING_SECONDS % 60}} sec
+				<!-- <button>Add to Favorites</button> -->
+			</p><br>
+			<!-- <li ng-repeat="bus in $ctrl.busStop">
+				{{bus.TIMEPOINT}} : {{bus.LATITUDE}}, {{bus.LONGITUDE}}
+			</li> -->
+		<!-- </ul> -->
+</div>

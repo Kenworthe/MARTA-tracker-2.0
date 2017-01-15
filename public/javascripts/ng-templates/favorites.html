@@ -1,0 +1,19 @@
+<div>
+  <h3>Logged in as username: {{ $ctrl.user.username }}</h3>
+   <p>List of favorites: {{ $ctrl.user.favorites }}</p> 
+</div>
+
+<div>
+
+<div ng-repeat="favorite in $ctrl.user.favorites">
+  <p>{{favorite}}</p>
+</div>
+
+<div>
+  <input type="text" ng-model="$ctrl.selectedFavorite" placeholder="Add a Favorite station">
+  <button ng-click="$ctrl.addNewFavorite($ctrl.selectedFavorite)">add</button>
+
+  <div ng-repeat="favorite in $ctrl.user.favorites">
+    <li ng-model="$ctrl.selectedFavorite">{{ favorite }}<button ng-click="$ctrl.removeFavorite(favorite)">x</button></li>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="navBar">
+  <!-- <a href=''><h2>[]</h2></a> -->
+  <a ui-sref="home">
+    <div class="logo">
+      <h1>M</h1>
+    </div>
+  </a>
+
+  <h1 class="center" id="marta">MARTA tracker</h1>
+  <div class="links">
+    <!-- <a ui-sref="/logout">Account</a><br> -->
+    <a ui-sref="profile" ng-show="$ctrl.user.username"><p>{{$ctrl.user.username}}</p></a>
+    <a href="/signup" ng-hide="$ctrl.user.username">Sign Up</a>
+    <a href="/logout"  ng-show="$ctrl.user.username">Logout</a>
+    <a href="/login" ng-hide="$ctrl.user.username">Login</a><br>
+  </div>
+</div>
+
+<div class="favorites fixed">
+  <!-- <p>></p> -->
+  <!-- <div class="favorite"> -->
+  <!-- <img src="../images/thumbup.svg"/> -->
+    <p ng-repeat="favorite in $ctrl.user.favorites">
+      <a ng-click="$ctrl.setSelection(favorite)" ui-sref="results" ui-sref-opts="{reload:true}">
+        {{ favorite }}
+      </a>
+    </p>
+    <!-- <p ng-click="$ctrl.removeFavorite(favorite)">x</p> -->
+
+</div>

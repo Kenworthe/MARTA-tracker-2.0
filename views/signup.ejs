@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="martaApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARTA Scheduler</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="navBar">
+      <!-- <a href=''><h2>[]</h2></a> -->
+      <a href="/">
+        <div class="logo">
+          <!-- <h1>M</h1> -->
+        </div>
+      </a>
+
+      <h1 class="center" id="marta">MARTA scheduler</h1>
+    </div>
+
+    <div class="login">
+      <form method='POST' action='/signup'/>
+        <!-- <label for='email'>Email:</label> -->
+        <input type='text' autofocus="autofocus" placeholder='Email' name='email'><br>
+        <!-- <label for='username'>Username:</label> -->
+        <input type='text' placeholder='Username' name='username'><br>
+        <!-- <label for='password'>Password:</label> -->
+        <input type='text' placeholder='Password' name='password'><br>
+        <!-- <label for='confirmPassword'>Confirm Password:</label> -->
+        <input type='text' placeholder='Confirm Password' name='confirmPassword'><br>
+        <button type='submit'>Sign up!</button>
+      </form>
+    </div>
+
+  </body>
+</html>
