@@ -1,11 +1,11 @@
-# Welcome to MARTA-Tracker!
-By: [Kenneth Lin](https://github.com/Kenworthe), [Van Moncrieff](https://github.com/vanmoncrieff), and [Ramata Diallo](https://github.com/ramata).
+# Welcome to MARTA-Tracker 2.0!
+By: [Kenneth Lin](https://github.com/Kenworthe)
 
 ### Description
 
-MARTA-Tracker is a mobile-first, SPA built with Angular 1.5 and Node.js. This app uses MARTA's realtime rails API in order to track train ETAs, and allows users to save favorite stations, saving them time for their next trip!
-
-  **Check it out on [Heroku](http://marta-tracker.herokuapp.com/)!**
+MARTA-Tracker 2.0 is an update to the original MARTA-Tracker (1.0). 
+It is a mobile-first, SPA built with Angular 1.5 and Node.js. 
+The app uses MARTA's realtime rails API in order to track train ETAs, and allows users to save favorite stations, saving them time for their next trip!
 
 ### Features
 
@@ -50,10 +50,13 @@ MARTA-Tracker is a mobile-first, SPA built with Angular 1.5 and Node.js. This ap
 * mLab
 
 **Source control & Project Management**
-* Git/Github (https://github.com/Kenworthe/MARTA-tracker)
-* Trello (https://trello.com/b/JWd3h5gV/marta-scheduler)
+* Git/Github (https://github.com/Kenworthe/MARTA-tracker-v2)
 
-### Notes
+### Current Notes for MARTA-tracker-v2
+
+* (in progress)
+
+### Original Notes for MARTA-tracker (1.0)
 
 * We envisioned this app to be a platform for users to track Marta's ETA and know exactly its schedule.
 * Originally planned to use both MARTA rails AND bus API.  However, the bus API did not contain ETA, and proved to not be too useful.
